@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
 // Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -67,6 +69,12 @@ html, body {
 @borderMedium: 2px;
 @borderThick: 3px;
 
+@lightSection: #9999CC;
+@mediumSection: #8888AA;
+@darkSection: #777799;
+
+@lightText: #EEEEFF;
+
 html {
 
 font-size:62.5%; /*62.5% means that 10px = 1 rem */
@@ -81,6 +89,7 @@ body {
 	height: 100%;
 	align-self: center;
 	font-size: 2rem;
+	font-family: 'Ubuntu', sans-serif;
 
 }
 
@@ -112,10 +121,39 @@ h4 {
 
 }
 
+#navigationHeader {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	border-radius: 3rem;
+	margin-top: 1rem;
+	background-color: @darkSection;
+
+	nav {
+
+		margin: 0 auto;
+		align-self: center;
+
+		a {
+
+			margin-left: 2.5rem;
+			margin-right: 2.5rem;
+			color: @lightText;
+
+		}
+
+	}
+
+}
+
 #profilePic {
 
 	width: 20rem;
 	height: 20rem;
+	border-radius: 5rem;
 
 }
 
@@ -127,13 +165,17 @@ h4 {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 
+	div {
+
+		align-self: center;
+
+	}
+
 }
 
 #contactMe {
 
 	display: inline;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
 
 }
 
@@ -141,8 +183,39 @@ h4 {
 
 display: flex;
 flex-direction: row;
+justify-content: space-between;
+padding-left: 1rem;
+padding-right: 1rem;
 padding-top: 2rem;
 padding-bottom: 2rem;
+margin-top: 2rem;
+background-color: @darkSection;
+border-radius: 3rem;
+color: @lightText;
+
+	h2 {
+
+		margin-bottom: 1rem;
+
+	}
+
+	h3 {
+
+		margin-bottom: 1rem;
+
+	}
+
+	#aboutMe {
+
+		width: 53rem;
+
+	}
+
+	#skills {
+
+		width: 23rem;
+
+	}
 
 }
 
@@ -154,6 +227,9 @@ padding-bottom: 2rem;
 	margin-top: 2rem;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
+	background-color: @darkSection;
+	border-radius: 3rem;
+	color: @lightText;
 
 }
 
@@ -163,10 +239,29 @@ padding-bottom: 2rem;
 
 }
 
-.experienceTable {
+#experience {
 
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	padding-top: 2rem;
+
+	div h3 {
+
+		margin-bottom: 1rem;
+
+	}
+
+	.experienceTable {
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	
+		h4 {
+	
+			margin-bottom: 1rem;
+	
+		}
+	
+	}
 
 }
+
