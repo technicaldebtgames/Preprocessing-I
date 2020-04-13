@@ -205,7 +205,11 @@ h4 {
   align-self: center;
 }
 #contactMe {
-  display: inline;
+  display: flex;
+}
+#contactMe button {
+  border-radius: 2rem;
+  margin-right: 1rem;
 }
 #aboutAndSkills {
   display: flex;
