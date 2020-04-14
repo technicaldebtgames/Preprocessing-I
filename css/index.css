@@ -1,1 +1,333 @@
-/* Compile your LESS file! */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Ubuntu Light'), local('Ubuntu-Light'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoC1CzTtw.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+  /*62.5% means that 10px = 1 rem */
+  display: flex;
+  flex-direction: column;
+}
+body {
+  width: 80rem;
+  height: 100%;
+  align-self: center;
+  font-size: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+@media (max-width: 800px) {
+  body {
+    width: 100%;
+  }
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+h4 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+#navigationHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  background-color: #777799;
+}
+#navigationHeader nav {
+  margin: 0 auto;
+  align-self: center;
+}
+#navigationHeader nav a {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  color: #EEEEFF;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  #navigationHeader {
+    border-radius: 0px;
+  }
+}
+#profilePic {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 5rem;
+}
+#profileAndInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#profileAndInfo div {
+  align-self: center;
+}
+#profileAndInfo div h1 {
+  margin-bottom: 1rem;
+}
+#profileAndInfo div a {
+  text-decoration: none;
+}
+#contactMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#contactMe button {
+  border-radius: 2rem;
+  margin-right: 1rem;
+}
+@media (max-width: 800px) {
+  #contactMe {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+#aboutAndSkills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  background-color: #777799;
+  border-radius: 3rem;
+  color: #EEEEFF;
+  line-height: 2.25rem;
+}
+#aboutAndSkills h2 {
+  margin-bottom: 1rem;
+}
+#aboutAndSkills h3 {
+  margin-bottom: 1rem;
+}
+#aboutAndSkills #aboutMe {
+  width: 47.5%;
+  padding-left: 1rem;
+}
+#aboutAndSkills #aboutMe p {
+  padding-top: 0.5rem;
+}
+#aboutAndSkills #skills {
+  width: 47.5%;
+  padding-right: 1rem;
+}
+#aboutAndSkills #skills li {
+  padding-top: 0.5rem;
+}
+@media (max-width: 800px) {
+  #aboutAndSkills {
+    border-radius: 0px;
+    flex-direction: column;
+  }
+  #aboutAndSkills #aboutMe {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+  #aboutAndSkills #skills {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  #aboutAndSkills h2 {
+    text-align: center;
+  }
+  #aboutAndSkills h3 {
+    text-align: center;
+  }
+}
+#copyright {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #777799;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  color: #EEEEFF;
+}
+@media (max-width: 800px) {
+  #copyright {
+    border-radius: 0px;
+  }
+}
+#copyrightText {
+  margin: 0 auto;
+}
+#experience {
+  padding-top: 2rem;
+}
+#experience h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+#experience .experienceTable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#experience .experienceTable h4 {
+  margin-bottom: 1rem;
+}
+#experience .experienceTable p {
+  margin-bottom: 0.5rem;
+}
