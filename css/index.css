@@ -148,8 +148,6 @@ html {
   flex-direction: column;
 }
 body {
-  display: flex;
-  flex-direction: column;
   width: 80rem;
   height: 100%;
   align-self: center;
@@ -178,8 +176,6 @@ h4 {
   font-weight: 800;
 }
 #navigationHeader {
-  align-self: left;
-  width: 400px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -194,16 +190,14 @@ h4 {
   align-self: center;
 }
 #navigationHeader nav a {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
   color: #EEEEFF;
   text-decoration: none;
 }
 @media (max-width: 800px) {
   #navigationHeader {
     border-radius: 0px;
-    align-self: center;
-    width: 100%;
   }
 }
 #profilePic {
@@ -301,9 +295,8 @@ h4 {
 }
 #copyright {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-content: center;
-  width: 100%;
   margin-top: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -315,8 +308,6 @@ h4 {
 @media (max-width: 800px) {
   #copyright {
     border-radius: 0px;
-    width: 100%;
-    align-self: center;
   }
 }
 #copyrightText {
