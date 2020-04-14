@@ -67,11 +67,24 @@ html, body {
 
 @pageFont: 'Ubuntu', sans-serif;
 
+.flexRow() {
+
+	display: flex;
+	flex-direction: row;
+
+}
+
+.flexColumn() {
+
+	display: flex;
+	flex-direction: column;
+
+}
+
 html {
 
 font-size:62.5%; /*62.5% means that 10px = 1 rem */
-display: flex;
-flex-direction: column;
+.flexColumn();
 
 }
 
@@ -121,8 +134,7 @@ h4 {
 
 #navigationHeader {
 
-	display: flex;
-	flex-direction: row;
+	.flexRow();
 	justify-content: space-between;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
@@ -164,8 +176,7 @@ h4 {
 
 #profileAndInfo {
 
-	display: flex;
-	flex-direction: row;
+	.flexRow();
 	justify-content: space-evenly;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
@@ -192,8 +203,7 @@ h4 {
 
 #contactMe {
 
-	display: flex;
-	flex-direction: row;
+	.flexRow();
 	justify-content: center;
 
 	button {
@@ -214,8 +224,7 @@ h4 {
 
 #aboutAndSkills {
 
-display: flex;
-flex-direction: row;
+.flexRow();
 justify-content: space-between;
 padding-left: 1rem;
 padding-right: 1rem;
@@ -305,8 +314,7 @@ line-height: 2.25rem;
 
 #copyright {
 
-	display: flex;
-	flex-direction: column;
+	.flexColumn();
 	align-content: center;
 	margin-top: 2rem;
 	padding-top: 2rem;
@@ -344,8 +352,7 @@ line-height: 2.25rem;
 
 	.experienceTable {
 
-		display: flex;
-		flex-direction: row;
+		.flexRow();
 		justify-content: space-between;
 	
 		h4 {
