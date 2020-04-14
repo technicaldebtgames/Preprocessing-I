@@ -61,19 +61,11 @@ html, body {
 
 // Custom LESS below.
 
-@borderDark: #555555;
-@borderMedium: #777777;
-@borderLight: #999999;
-
-@borderThin: 1px;
-@borderMedium: 2px;
-@borderThick: 3px;
-
-@lightSection: #9999CC;
-@mediumSection: #8888AA;
 @darkSection: #777799;
 
 @lightText: #EEEEFF;
+
+@pageFont: 'Ubuntu', sans-serif;
 
 html {
 
@@ -89,7 +81,13 @@ body {
 	height: 100%;
 	align-self: center;
 	font-size: 2rem;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: @pageFont;
+
+	@media (max-width: 800px) {
+
+		width: 100%;
+
+	}
 
 }
 
@@ -148,6 +146,12 @@ h4 {
 
 	}
 
+	@media (max-width: 800px) {
+
+		border-radius: 0px;
+
+	}
+
 }
 
 #profilePic {
@@ -196,6 +200,13 @@ h4 {
 
 		border-radius: 2rem;
 		margin-right: 1rem;
+
+	}
+
+	@media (max-width: 800px) {
+
+		margin-left: 2rem;
+		margin-right: 2rem;
 
 	}
 
@@ -254,6 +265,42 @@ line-height: 2.25rem;
 
 	}
 
+	@media (max-width: 800px) {
+
+		border-radius: 0px;
+		flex-direction: column;
+
+		#aboutMe {
+
+			width: 100%;
+			padding-left: 2rem;
+			padding-right: 2rem;
+			padding-bottom: 2rem;
+
+		}
+
+		#skills {
+
+			width: 100%;
+			padding-left: 2rem;
+			padding-right: 2rem;
+
+		}
+
+		h2 {
+
+			text-align: center;
+
+		}
+
+		h3 {
+
+			text-align: center;
+
+		}
+
+	}
+
 }
 
 #copyright {
@@ -269,6 +316,12 @@ line-height: 2.25rem;
 	border-top-right-radius: 3rem;
 	color: @lightText;
 
+	@media (max-width: 800px) {
+
+		border-radius: 0px;
+
+	}
+
 }
 
 #copyrightText {
@@ -277,7 +330,7 @@ line-height: 2.25rem;
 
 }
 
-#experience {
+#experience { // I have now realized that this was the incorrect format for easily converting to lower screen resolution.
 
 	padding-top: 2rem;
 

@@ -154,6 +154,11 @@ body {
   font-size: 2rem;
   font-family: 'Ubuntu', sans-serif;
 }
+@media (max-width: 800px) {
+  body {
+    width: 100%;
+  }
+}
 h1 {
   font-size: 4rem;
   font-weight: 800;
@@ -190,6 +195,11 @@ h4 {
   color: #EEEEFF;
   text-decoration: none;
 }
+@media (max-width: 800px) {
+  #navigationHeader {
+    border-radius: 0px;
+  }
+}
 #profilePic {
   width: 20rem;
   height: 20rem;
@@ -219,6 +229,12 @@ h4 {
 #contactMe button {
   border-radius: 2rem;
   margin-right: 1rem;
+}
+@media (max-width: 800px) {
+  #contactMe {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 #aboutAndSkills {
   display: flex;
@@ -254,6 +270,29 @@ h4 {
 #aboutAndSkills #skills li {
   padding-top: 0.5rem;
 }
+@media (max-width: 800px) {
+  #aboutAndSkills {
+    border-radius: 0px;
+    flex-direction: column;
+  }
+  #aboutAndSkills #aboutMe {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+  #aboutAndSkills #skills {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  #aboutAndSkills h2 {
+    text-align: center;
+  }
+  #aboutAndSkills h3 {
+    text-align: center;
+  }
+}
 #copyright {
   display: flex;
   flex-direction: column;
@@ -265,6 +304,11 @@ h4 {
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
   color: #EEEEFF;
+}
+@media (max-width: 800px) {
+  #copyright {
+    border-radius: 0px;
+  }
 }
 #copyrightText {
   margin: 0 auto;
