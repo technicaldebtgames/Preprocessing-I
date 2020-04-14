@@ -242,12 +242,14 @@ h4 {
 }
 #aboutAndSkills #aboutMe {
   width: 47.5%;
+  padding-left: 1rem;
 }
 #aboutAndSkills #aboutMe p {
   padding-top: 0.5rem;
 }
 #aboutAndSkills #skills {
   width: 47.5%;
+  padding-right: 1rem;
 }
 #aboutAndSkills #skills li {
   padding-top: 0.5rem;
@@ -270,7 +272,7 @@ h4 {
 #experience {
   padding-top: 2rem;
 }
-#experience div h3 {
+#experience h3 {
   margin-bottom: 1rem;
   text-align: center;
 }
