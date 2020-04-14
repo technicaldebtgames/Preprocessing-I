@@ -176,8 +176,8 @@ h4 {
   justify-content: space-between;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-radius: 3rem;
-  margin-top: 1rem;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
   background-color: #777799;
 }
 #navigationHeader nav {
@@ -204,8 +204,13 @@ h4 {
 #profileAndInfo div {
   align-self: center;
 }
+#profileAndInfo div h1 {
+  margin-bottom: 1rem;
+}
 #contactMe {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 #contactMe button {
   border-radius: 2rem;
@@ -223,6 +228,7 @@ h4 {
   background-color: #777799;
   border-radius: 3rem;
   color: #EEEEFF;
+  line-height: 2.25rem;
 }
 #aboutAndSkills h2 {
   margin-bottom: 1rem;
@@ -231,10 +237,16 @@ h4 {
   margin-bottom: 1rem;
 }
 #aboutAndSkills #aboutMe {
-  width: 53rem;
+  width: 47.5%;
+}
+#aboutAndSkills #aboutMe p {
+  padding-top: 0.5rem;
 }
 #aboutAndSkills #skills {
-  width: 23rem;
+  width: 47.5%;
+}
+#aboutAndSkills #skills li {
+  padding-top: 0.5rem;
 }
 #copyright {
   display: flex;
@@ -244,7 +256,8 @@ h4 {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: #777799;
-  border-radius: 3rem;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
   color: #EEEEFF;
 }
 #copyrightText {
