@@ -188,6 +188,7 @@ h4 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
   color: #EEEEFF;
+  text-decoration: none;
 }
 #profilePic {
   width: 20rem;
@@ -276,4 +277,7 @@ h4 {
 }
 #experience .experienceTable h4 {
   margin-bottom: 1rem;
+}
+#experience .experienceTable p {
+  margin-bottom: 0.5rem;
 }
